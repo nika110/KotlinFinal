@@ -1,0 +1,73 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.imgzavredges" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/dark</item>
+        <item name="colorPrimaryVariant">@color/dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>
+        <item name="android:statusBarColor">@color/dark</item>
+
+    </style>
+
+    <style name="SplashScreenTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_screen_day</item>
+        <item name="android:statusBarColor">@color/dark</item>
+        <item name="colorControlActivated">@color/yellow</item>
+        <item name="colorSwitchThumbNormal">@color/dark</item>
+    </style>
+
+    <style name="WelcomeAlertDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+    </style>
+
+    <style name="AppBottomSheetDialogTheme" parent="Theme.MaterialComponents.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/CustomBottomSheetStyle</item>
+        <item name="colorPrimary">@color/dark</item>
+        <item name="colorPrimaryVariant">@color/dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+    </style>
+
+    <style name="CustomBottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/drawable_round_bottom_sheet_white</item>
+    </style>
+
+    <style name="WelcomeDialogTextStyle" parent="Theme.imgzavredges">
+        <item name="android:textColor">@color/darker</item>
+    </style>
+
+    <style name="WelcomeDialogSubTextStyle" parent="Theme.imgzavredges">
+        <item name="android:textColor">@color/dark_gray</item>
+    </style>
+
+    <style name="FuelAlertDialogStyle" parent="Theme.imgzavredges">
+        <item name="android:backgroundTint">@color/dark</item>
+    </style>
+
+    <style name="FuelAlertDialogButtonStyle" parent="FuelAlertDialogStyle">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="FuelAlertDialogTextStyle" parent="Theme.imgzavredges">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="NotesAnimationStyle" parent="Theme.imgzavredges">
+        <item name="lottie_rawRes">@raw/ic_notes_day</item>
+    </style>
+
+    <style name="AddNotesAnimationStyle" parent="Theme.imgzavredges">
+        <item name="lottie_rawRes">@raw/ic_add_notes_day</item>
+    </style>
+
+    <style name="UpdateNotesAnimationStyle" parent="Theme.imgzavredges">
+        <item name="lottie_rawRes">@raw/ic_update_notes_day</item>
+    </style>
+
+</resources>

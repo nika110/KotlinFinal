@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_dashboard">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.imgzavredges.ui.notes.NotesFragment"
+        android:label="@string/title_notes"
+        tools:layout="@layout/fragment_notes" >
+        <action
+            android:id="@+id/action_navigation_home_to_addNotesFragment"
+            app:destination="@id/addNotesFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_updateNotesFragment"
+            app:destination="@id/updateNotesFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_addNotesFragment2"
+            app:destination="@id/addNotesFragment"
+            app:enterAnim="@android:anim/slide_in_left" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.imgzavredges.ui.dashboard.DashboardFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/action_navigation_dashboard_to_welcomeFragment"
+            app:destination="@id/welcomeFragment" />
+        <action
+            android:id="@+id/action_navigation_dashboard_to_changeDataFragment"
+            app:destination="@id/changeDataFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.example.imgzavredges.ui.trip.TripFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_fuel_management" >
+        <action
+            android:id="@+id/action_navigation_notifications_to_firstOdometerReadingFragment"
+            app:destination="@id/firstOdometerReadingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addNotesFragment"
+        android:name="com.example.imgzavredges.ui.notes.notesFragments.add.AddNotesFragment"
+        android:label="AddNotesFragment"
+        tools:layout="@layout/fragment_add_notes">
+        <action
+            android:id="@+id/action_addNotesFragment_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateNotesFragment"
+        android:name="com.example.imgzavredges.ui.notes.notesFragments.update.UpdateNotesFragment"
+        android:label="UpdateNotesFragment"
+        tools:layout="@layout/fragment_update_notes">
+        <argument
+            android:name="title"
+            app:argType="string"
+            android:defaultValue=" " />
+        <argument
+            android:name="description"
+            app:argType="string"
+            android:defaultValue=" " />
+        <argument
+            android:name="id"
+            app:argType="string"
+            android:defaultValue=" " />
+        <action
+            android:id="@+id/action_updateNotesFragment_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.example.imgzavredges.ui.welcome_screens.WelcomeFragment"
+        android:label="fragment_welcome"
+        tools:layout="@layout/fragment_welcome" >
+        <action
+            android:id="@+id/action_welcomeFragment_to_enterWelcomeDataFragment"
+            app:destination="@id/enterWelcomeDataFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/enterWelcomeDataFragment"
+        android:name="com.example.imgzavredges.ui.welcome_screens.EnterWelcomeDataFragment"
+        android:label="fragment_enter_welcome_data"
+        tools:layout="@layout/fragment_enter_welcome_data" >
+        <action
+            android:id="@+id/action_enterWelcomeDataFragment_to_navigation_dashboard"
+            app:destination="@id/navigation_dashboard" />
+    </fragment>
+    <fragment
+        android:id="@+id/changeDataFragment"
+        android:name="com.example.imgzavredges.ui.dashboard.ChangeDataFragment"
+        android:label="fragment_change_data"
+        tools:layout="@layout/fragment_change_data" >
+        <action
+            android:id="@+id/action_changeDataFragment_to_navigation_dashboard"
+            app:destination="@id/navigation_dashboard" />
+    </fragment>
+    <fragment
+        android:id="@+id/firstOdometerReadingFragment"
+        android:name="com.example.imgzavredges.ui.trip.FirstOdometerReadingFragment"
+        android:label="fragment_first_odometer_reading"
+        tools:layout="@layout/fragment_first_odometer_reading" >
+        <action
+            android:id="@+id/action_firstOdometerReadingFragment_to_navigation_notifications"
+            app:destination="@id/navigation_notifications" />
+    </fragment>
+
+</navigation>
