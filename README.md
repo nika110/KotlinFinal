@@ -1,17 +1,17 @@
-#იმგზავრე დღეს
+# იმგზავრე დღეს
 
 ეს არის აპლიკაცია მანქანის მფლობელებისთვის. ის საშუალებას აძლევს მანქანის მფლობელს გააკონტროლოს საწვავის, ავტო ნაწილების და შეკეთების ღირებულება, მიაწოდოს ინფორმაცია ამინდის პირობების შესახებ, გზებზე ან მომხმარებლის ამჟამინდელ მდებარეობაზე. 
 თავად აპლიკაცია შედგება სამი ნაწილისგან: ამინდისგან, ნოუთებისგან და საწვავის მენეჯერისგან.
 
 
 პროექტში გამოყენებული იქნა:
-Kotlin
-Coroutines
-Retrofit
-Room
-Retrofit
-Shared Preferences
-Navigation Component
-Single Activity Architecture
-MVVM Architecture
-Lottie Animations
+- Kotlin
+- Coroutines
+- Retrofit
+- Room
+- Retrofit
+- Shared Preferences
+- Navigation Component
+- Single Activity Architecture
+- MVVM Architecture
+- Lottie Animations
